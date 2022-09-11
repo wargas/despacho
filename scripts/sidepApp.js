@@ -3849,7 +3849,7 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
             localStorage.setItem("interessadoDespacho", $scope.nomeInteressado);
             localStorage.setItem("tipoDespacho", $scope.tipoDespacho);
 
-            $scope.url = 'Impressao.html';
+            $scope.url = 'impressao.html';
         };
     };
 });

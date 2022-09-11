@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+
+    <!-- Bootstrap e JQuery -->
+    <!-- jQuery library -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="scripts/jquery-1.9.1.min.js"></script>
+    <!-- Minified CSS -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <!-- Latest compiled JavaScript
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+    <!-- Angular JS-->
+    <script type="text/javascript" src="scripts/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/angular-locale_pt-br.min.js"></script>
+    <!-- Script do SIDEP-->
+    <script type="text/javascript" src="scripts/sidepImApp.js"></script>
+</head>
+<body>
+    <div ng-app="spApp" ng-controller="siCtrl">
+        <div class="container">
+            <br />
+            <div class="text-center">
+                <img src="images/ArmasBrasil.png" class="img-rounded" width="100" height="100">
+                <p style="font-size:large"><b>INSS - Instituto Nacional do Seguro Social</b></p>
+            </div>
+
+            <div style="margin-left:70px; margin-right:10px; text-align:justify">
+                <p class="text-left"><b>{{orgaoUsuario}}, em {{dataDespacho}}</b></p>
+                <div style="margin-left:150px">
+                    <p style="margin:0px"><i><b>{{especieDespacho}}: </b></i>{{nbDespacho}}<br />
+                    <p style="margin:0px"><i><b>Int: </b></i><span class="text-uppercase">{{interessadoDespacho}}</span><br />
+                    <p><i><b>Assunto: </b></i>{{tipoDespacho}} do Requerimento</p><br />
+                </div>
+                <!-- Receber aqui o conteúdo da edição no Trix-->
+                <div id="conteudo"><p>{{conteudoDespacho}}</p></div>
+            </div>
+            <div class="text-center">
+                <br />
+                <br />
+                <p style="margin:0px"><b><span class="text-uppercase">{{nomeUsuario}}</span></b></p>
+                <p style="margin:0px">{{cargoUsuario}}</p>
+                <p>Matr. {{matrUsuario}}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
