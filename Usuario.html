@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>SIDEP - Despachos Previdenciários</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap e JQuery -->
+    <!-- jQuery library -->
+    <script type="text/javascript" src="./scripts/jquery-1.9.1.min.js"></script>
+    <!-- Minified CSS -->
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <!-- Angular JS-->
+    <script type="text/javascript" src="./scripts/angular.min.js"></script>
+    <!-- Angular JS Cookies-->
+    <script type="text/javascript" src="./scripts/angular-cookies.min.js"></script>
+    <!-- Angular JS UI Bootstrap-->
+    <script type="text/javascript" src="./scripts/angular-animate.js"></script>
+    <script type="text/javascript" src="./scripts/ui-bootstrap-tpls.js"></script>
+    <!-- Angular JS Boostrap Toggle -->
+    <link rel="stylesheet" href="Content/angular-bootstrap-toggle.min.css">
+    <script src="./scripts/angular-bootstrap-toggle.min.js"></script>
+    <!-- Script de Usuário do SIDEP-->
+    <script type="text/javascript" src="./scripts/sidepUsApp.js"></script>
+
+</head>
+<body>
+    <div ng-app="suApp" ng-controller="suCtrl">
+        <div class="container-fluid">
+            <div class="container-fluid bg-primary">
+                <h3 class="text-center"><strong>SIDEP - Sistema de Despachos Previdenciários</strong></h3>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li><a href="Index.html"><span class="glyphicon glyphicon-pencil"></span><strong> Início</strong></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="Usuario.html"><span class="glyphicon glyphicon-user"></span><strong> Usuário</strong></a></li>
+                        <li><a href="Sobre.html"><span class="glyphicon glyphicon-info-sign"></span><strong> Sobre</strong></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="panel panel-default" style="max-width:600px">
+                <div class="panel-heading">
+                    <div class="text-center">
+                        <h3><strong>Configurações do Usuário</strong></h3>
+                        <small>(Dados armazenados localmente)</small>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="nomeUsuario">Nome: </label>
+                            <input type="text" ng-model="nomeUsuario" class="form-control text-capitalize" id="nomeUsuario" placeholder="Nome do Usuário" size="50" maxlength="50" />
+                        </div>
+                        <div class="form-group">
+                            <label for="cargoUsuario">Cargo: </label>
+                            <input type="text" ng-model="cargoUsuario" class="form-control text-capitalized" id="cargoUsuario" placeholder="Cargo do Usuário" size="50" maxlength="50" />
+                        </div>
+                        <div class="form-group">
+                            <label for="matrUsuario">Matrícula: </label>
+                            <input type="text" ng-model="matrUsuario" class="form-control" id="matrUsuario" placeholder="Matrícula do Usuário" maxlength="7" oninput="this.value=this.value.replace(/[^0-9]/g,'');" size="25" />
+                        </div>
+                        <div class="form-group">
+                            <label for="orgaoUsuario">Órgão Local: </label>
+                            <input type="text" ng-model="orgaoUsuario" class="form-control text-capitalize" id="orgaoUsuario" placeholder="Órgão Local do Usuário" size="50" maxlength="50" />
+                        </div>
+
+                        <!-- OPÇÃO ACORDO INTERNACIONAL
+                    <div class="form-group checkbox">
+                        <label><input type="checkbox" ng-model="acordoInternacional" id="acordoInternacional"><strong>Utilizar Opções de Acordo Internacional</strong></label>
+                    </div>
+                     -->
+
+                        <div class="form-group">
+                            <button type="button" class="btn btn-warning" ng-click="limparDados()">Limpar</button>
+                            <button type="button" class="btn btn-primary" ng-click="gravarDados()">Salvar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

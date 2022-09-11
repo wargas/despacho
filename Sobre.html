@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SIDEP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container-fluid bg-primary">
+            <h3 class="text-center" ><strong>SIDEP - Sistema de Despachos Previdenciários</strong></h3>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="Index.html"><span class="glyphicon glyphicon-pencil"></span><strong> Início</strong></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Usuario.html"><span class="glyphicon glyphicon-user"></span><strong> Usuário</strong></a></li>
+                    <li><a href="Sobre.html"><span class="glyphicon glyphicon-info-sign"></span><strong> Sobre</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container" style="max-width:800px">
+        <div style="text-align:justify">
+            <p>
+                <h4>
+                    SIDEP é um sistema auxiliar na formulação de despachos de Requerimentos previdenciários. Busca disponibilizar as justificativas e fundamentação legal para as situações mais comuns
+                    encontradas na rotina de análise de Requerimentos previdenciários.
+                </h4>
+            </p>
+            <h4>Erros/Sugestões: <a href="mailto:a.badaro@gmail.com">a.badaro@gmail.com</a></h4>
+            <h4>Uso básico:</h4>
+            <ol>
+                <li>Configurar dados do usuário no menu "Usuário", e salvar;</li>
+                <li>No menu "Início", inserir as informações do requerimento analisado;</li>
+                <li>Nas abas, marcar/desmarcar as caixas de seleção dos itens a serem incluídos no despacho;</li>
+                <li>Fazer eventuais alterações e complementação dos itens do despacho na aba "Edição";</li>
+                <li>Verificar na aba "Visualização" se a prévia do despacho está adequada;</li>
+                <li>Por fim, clicar no botao "Imprimir". O despacho será aberto em nova aba, pronto para ser impresso/salvo.</li>
+            </ol>
+        </div>
+        <br />
+        <div style="border-style:solid; border-color:dodgerblue">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                    <li data-target="#myCarousel" data-slide-to="4"></li>
+                    <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="images/Tut1.png">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/Tut2.png">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/Tut3.gif">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/Tut4.png">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/Tut5.png">
+                    </div>
+
+                    <div class="item">
+                        <img src="images/Tut6.png">
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-left" style="color:#0275d8"></span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next" style="background:none">
+                    <span class="glyphicon glyphicon-chevron-right" style="color:#0275d8"></span>
+                </a>
+            </div>
+        </div>
+        <br />
+        <h5><strong>Últimas alterações:</strong></h5>
+        <ul>
+            <li><strong>05/12/2021:</strong> Alteração das espécies "Auxílio-Doença Urbano" e "Auxílio-Doença Rural" para "Benefício por Incapacidade Temporária Urbano" e "Benefício por Incapacidade Temporária Rural", respectivamente.</li>
+            <li><strong>23/11/2021:</strong> Inclusão de itens na aba "Outros": ocorrência ou não de acréscimo de 12 meses à qualidade de segurado por possuir 120 contribuições sem perda da qualidade de segurado.</li>
+            <li><strong>11/11/2021:</strong> Inclusão da fundamentação legal para opções de Alteração de Espécie, na aba "Outros".</li>
+            <li><strong>31/08/2021:</strong> Inclusão de item na aba "Procedimentos": Avaliação Conjunta - Social e Médico-Pericial, com embasamento legal para Aposentadorias da Pessoa com Deficiência e Benefício Assistencial ao Deficiente.</li>
+            <li><strong>31/08/2021:</strong> Inclusão de opção de "dispensa de complementação" para FBR não validado.</li>
+            <li><strong>30/08/2021:</strong> Inclusão de opção para Qualidade de Segurado em concessão/indeferimento de Pensões: "Desdobrada".</li>
+            <li><strong>06/07/2021:</strong> Inclusão de motivo de Indeferimento no Salário-Maternidade: "Falta de Qualidade de Segurado do Cônjuge/Companheiro sobrevivente".</li>
+            <li><strong>06/07/2021:</strong> Inclusão de motivo de Indeferimento no Salário-Maternidade: "Não comprovação como Cônjuge/Companheiro sobrevivente".</li>
+            <li><strong>08/06/2021:</strong> Alteração de texto de Dependentes de Pensão por Morte e Auxílio-Reclusão, para exclusão de ambiguidade.</li>
+            <li><strong>07/06/2021:</strong> Correção de fundamentações legais para Aposentadorias, após Decreto 10.410/20.</li>
+            <li><strong>02/06/2021:</strong> Alteração no texto de concessão de Aposentadoria por Idade: Idade mínima exigida.</li>
+            <li><strong>30/05/2021:</strong> Implementação da possibilidade de visualização prévia do despacho com edições/formatação.</li>
+            <li><strong>13/05/2021:</strong> Inclusão de item na aba "Outros": Instituidor de Pensão titular de BPC, que não garante Pensão.</li>
+            <li><strong>09/04/2021:</strong> Inclusão de itens na aba "Vínculos", "Documentos e CNIS": Certidão de Tempo de Contribuição - CTC e Averbação de Tempo de Contribuição - ATC.</li>
+            <li><strong>08/04/2021:</strong> Inclusão de motivo de Indeferimento na Pensão por Morte: "Já recebe benefício referente ao mesmo fato gerador".</li>
+            <li><strong>02/04/2021:</strong> Inclusão de item na aba "Procedimentos", em "Perícia Médica" e "Avaliação Social": inclusão de texto sobre comunicação posterior de agendamentos (visível quando os procedimentos estiverem selecionados como "Não Agendada").</li>
+            <li><strong>02/04/2021:</strong> Inclusão de itens na aba "Procedimentos": Perícia Médica - Não Agendada, e Avaliação Social - Não Agendada.</li>
+            <li><strong>02/04/2021:</strong> Inclusão de item na aba "Outros": Não houve acréscimo de 12 meses à qualidade de segurado por desemprego.</li>
+            <li><strong>25/03/2021:</strong> Correção visual (gif) nas imagens do tutorial de utilização do sistema, no menu "Sobre".</li>
+            <li><strong>25/03/2021:</strong> Inclusão de motivo para não consideração de contribuições, na aba "Contribuições": "Contribuições em atraso não consideradas para carência".</li>
+            <li><strong>25/03/2021:</strong> Inclusão de item na aba "Outros": Cessação de Benefício incompatível/com acumulação vedada (com texto/fundamentação diferentes entre Benefícios e CTC).</li>
+            <li><strong>25/03/2021:</strong> Inclusão de motivo de Indeferimento na Certidão de Tempo de Contribuição: "Opção por não cessação de Auxílio ou Abono".</li>
+            <li><strong>19/03/2021:</strong> Inclusão de item na aba "Motivo(s)", na Concessão de Certidão de Tempo de Contribuição: inclusão de texto explicativo sobre emissão da CTC.</li>
+            <li><strong>20/02/2021:</strong> Inclusão de item na aba "Motivo(s)", na Concessão de Pensão por Morte: inclusão de texto explicativo sobre cálculo do valor da Pensão.</li>
+            <li><strong>20/02/2021:</strong> Inclusão de item na aba "Motivo(s)", na Concessão de Aposentadoria por Idade Urbana: Completou 15 anos de Contribuição.</li>
+            <li><strong>20/02/2021:</strong> Inclusão de item na aba "Outros": Auxílio-Acidente não considerado para manutenção da qualidade de segurado.</li>
+            <li><strong>20/02/2021:</strong> Inclusão de item na aba "Outros": DER não reafirmada pois não teria direito ao benefício.</li>
+            <li><strong>19/02/2021:</strong> Inclusão de motivo para não consideração de contribuições, na aba "Contribuições": "Contribuições em atraso após a DER".</li>
+            <li><strong>18/02/2021:</strong> Inclusão de motivo para não consideração de vínculo, na aba "Vínculos": "Remuneração inferior ao mínimo".</li>
+            <li><strong>18/02/2021:</strong> Inclusão de texto explicativo para Renovação de Declaração de Cárcere no Indeferimento por Recebimento de Benefício de Auxílio-Reclusão.</li>
+            <li><strong>17/02/2021:</strong> Inclusão de motivo de Indeferimento na Certidão de Tempo de Contribuição: "Já possui CTC concedida".</li>
+            <li><strong>10/02/2021:</strong> Inclusão de motivo de Indeferimento na Pensão por Morte: "Não comprovação de filiação do Instituidor ao RGPS".</li>
+            <li><strong>10/02/2021:</strong> Correção de texto exibido no motivo de despacho de indeferimento, referente a não restabelecimento de vínculo conjugal, ao selecionar as espécies de Pensão por Morte Urbana e Rural.</li>
+            <li><strong>10/02/2021:</strong> Inclusão de motivo de Indeferimento no Auxílio-Reclusão: "Já é titular de benefício em manutenção referente ao mesmo fato gerador".</li>
+            <li><strong>27/12/2020:</strong> Correção de texto exibido no motivo de despacho, que repetia a palavra "Benefício", ao selecionar as espécies 87 e 88.</li>
+            <li><strong>09/10/2020:</strong> Correção de erro em que era exibido despacho de Consignação e Resíduo, na aba "Outros", sem que tais opções tivessem sido selecionadas.</li>
+            <li><strong>08/10/2020:</strong> Correção de erro na validação do NB ao alterar espécie do benefício.</li>
+            <li><strong>08/10/2020:</strong> Inclusão de item na aba "Outros": Aproveitamento parcial de períodos na concessão de CTC.</li>
+            <li><strong>07/10/2020:</strong> Inclusão da possibilidade de registrar o Órgão de Destino ao selecionar a Concessão de CTC.</li>
+            <li><strong>07/10/2020:</strong> Inclusão de motivo de Indeferimento na Pensão por Morte: "Não comprovação do restabelecimento do vínculo conjugal após declaração de separação de fato". "Visível ao selecionar Não comprovação da condição de Dependente" e "Cônjuge".</li>
+            <li><strong>06/10/2020:</strong> Inclusão de registro de enquadramento de atividade especial em análise de CTC, quando houver seleção de enquadramento Total ou Parcial na aba "Especial" e selecionado despacho de CTC.</li>
+            <li><strong>06/10/2020:</strong> Inclusão de motivo para não reconhecimento de atividade, na aba "Rural": "Não indenização do período", com a correta fundamentação, quando selecionado despacho de CTC.</li>
+            <li><strong>06/10/2020:</strong> Inclusão de motivo para não consideração de vínculo, na aba "Vínculos": "Concomitância com período de débito". Somente visível ao realizar despacho de CTC.</li>
+            <li><strong>05/10/2020:</strong> Inclusão de suporte à espécie CTC - Certidão de Tempo de Contribuição.</li>
+            <li><strong>23/09/2020:</strong> Inclusão da possibilidade de registrar indeferimento parcial e selecionar múltiplas categorias de dependentes não comprovados na aba "Motivos", ao selecionar Concessão de Auxílios-Reclusão.</li>
+            <li><strong>23/09/2020:</strong> Inclusão da possibilidade de registrar indeferimento parcial e selecionar múltiplas categorias de dependentes não comprovados na aba "Motivos", ao selecionar Concessão de Pensões.</li>
+            <li><strong>23/09/2020:</strong> Inclusão da possibilidade de selecionar múltiplas categorias de dependentes na aba "Motivos", ao selecionar Concessão de Auxílios-Reclusão.</li>
+            <li><strong>23/09/2020:</strong> Inclusão da possibilidade de selecionar múltiplas categorias de dependentes na aba "Motivos", ao selecionar Concessão de Pensões.</li>
+            <li><strong>23/09/2020:</strong> Inclusão da possibilidade de selecionar múltiplas categorias de dependentes na aba "Motivos", ao selecionar Indeferimento de Auxílios-Reclusão.</li>
+            <li><strong>23/09/2020:</strong> Inclusão da possibilidade de selecionar múltiplas categorias de dependentes na aba "Motivos", ao selecionar Indeferimento de Pensões.</li>
+            <li><strong>10/09/2020:</strong> Inclusão de Validação do Número de Benefício e Requerente, com estilização dos campos correspondentes.</li>
+            <li><strong>01/09/2020:</strong> Inclusão de motivo para não reconhecimento de atividade, na aba "Rural": "Não apresentação da Autodeclaração".</li>
+            <li><strong>01/09/2020:</strong> Inclusão de suporte às espécies: 36 e 94 - Auxílio-Acidente Previdenciário e por Acidente de Trabalho.</li>
+            <li><strong>29/08/2020:</strong> Inclusão de suporte à espécie: 93 - Pensão por Morte por Acidente de Trabalho.</li>
+            <li><strong>28/08/2020:</strong> Inclusão de tag estatística.</li>
+            <li><strong>20/08/2020:</strong> Inclusão de motivo de Indeferimento no Salário-Maternidade Urbano/Rural: Criança com mais de 12 anos na data da adoção.</li>
+            <li><strong>20/08/2020:</strong> Inclusão de motivo de Concessão na Aposentadoria por Idade Urbana: Idade e Carência na condição de pessoa com deficiência (LC nº 142/13).</li>
+            <li><strong>20/08/2020:</strong> Inclusão de motivo de Concessão na Aposentadoria por Tempo de Contribuição: Tempo de Contribuição na condição de pessoa com deficiência (LC nº 142/13).</li>
+            <li><strong>20/08/2020:</strong> Correção da forma de exibição do Tempo de Contribuição informado na Aposentadoria por Tempo de Contribuição, em Concessão e em Indeferimento.</li>
+            <li><strong>08/08/2020:</strong> Inclusão de item na aba "Exigências", "Não Cumpridas": Correspondência não entregue.</li>
+            <li><strong>07/08/2020:</strong> Mudança de item na aba "Outros": Não comprovou Comprometimento de Renda - ACP nº 5044874-22.2013.404.7100-RS (B87 / B88) - Movido como sub-item na aba Motivo de Indeferimento.</li>
+            <li><strong>20/07/2020:</strong> Alteração de item na aba "Outros": Considerados documentos não autenticados (§2º, art. 19-B do Decreto nº 3.048/99).</li>
+            <li><strong>20/07/2020:</strong> Inclusão de item na aba "Outros": Não comprovou Comprometimento de Renda - ACP nº 5044874-22.2013.404.7100-RS (B87 / B88).</li>
+            <li><strong>06/07/2020:</strong> Inclusão de motivo de Indeferimento no Salário-Maternidade: "Requerimento antes do parto para Requerente em período de manutenção da qualidade de segurada".</li>
+            <li><strong>09/06/2020:</strong> Inclusão de embasamento legal para não enquadramento na aba "Especial".</li>
+            <li><strong>04/06/2020:</strong> Inclusão de item na aba "Outros": Considerados documentos não autenticados (Portaria nº 412/2020).</li>
+            <li><strong>04/06/2020:</strong> Inclusão de item na aba "Outros": Realizada consignação de valor recebido pós óbito.</li>
+            <li><strong>29/04/2020:</strong> Inclusão de itens na aba "Vínculos", "Documentos e CNIS": seleção de documentos comprobatórios do art. 10 da IN 77/2015.</li>
+            <li><strong>29/04/2020:</strong> Correção visual geral de posicionamento de campos em todas as abas.</li>
+            <li><strong>28/04/2020:</strong> Inclusão de motivo para não reconhecimento de atividade, na aba "Rural": "Não indenização do período".</li>
+            <li><strong>28/04/2020:</strong> Inclusão de motivos para não reconhecimento de atividade, na aba "Rural": "Não participação na atividade", e "Outorga irregular da propriedade".</li>
+            <li><strong>27/04/2020:</strong> Inclusão de motivos de Concessão nas Aposentadorias Especial e de Professor: "Nova", "Transição", e "Anterior".</li>
+            <li><strong>27/04/2020:</strong> Inclusão de campos na aba "Outros", "Consulta externa": informação de Órgão e Resposta da consulta.</li>
+            <li><strong>25/04/2020:</strong> Inclusão de motivos de Concessão na Aposentadoria por Tempo de Contribuição: "Programada", "Transição", e "Anterior".</li>
+            <li><strong>23/04/2020:</strong> Inclusão de motivo de Indeferimento no Benefício Assistencial ao Deficiente: "Não comparecimento às Avaliações agendadas".</li>
+            <li><strong>23/04/2020:</strong> Inclusão de motivo de Indeferimento na Pensão, Auxílio-Doença, Aposentadorias por Idade, Especial e do Professor, e Benefícios Assistenciais: "Recebimento de outro Benefício".</li>
+            <li><strong>23/04/2020:</strong> Correção geral na formatação do texto quando há a seleção de vários itens, nas abas "Especial", "Rural", "Procedimentos", e "Outros".</li>
+            <li><strong>22/04/2020:</strong> Correção geral na formatação do texto quando há a seleção de vários itens, nas abas "Vínculos", e "Contribuições".</li>
+            <li><strong>21/04/2020:</strong> Inclusão de motivo de Indeferimento na Aposentadoria por Tempo de Contribuição: "Recebimento de outro Benefício".</li>
+            <li><strong>21/04/2020:</strong> Correção geral na formatação do texto quando há a seleção de vários itens, em "Motivos" de Indeferimento e de Concessão.</li>
+            <li><strong>21/04/2020:</strong> Correção de motivo de Indeferimento de Salário-Maternidade Rural: "Empregada na data do fato gerador".</li>
+            <li><strong>17/04/2020:</strong> Inclusão de item na aba "Exigências", "Não Cumpridas": Encerramento sem análise do mérito após 75 dias.</li>
+            <li><strong>16/04/2020:</strong> Inclusão de item na aba "Outros": Requerente deverá solicitar o pagamento de resíduo.</li>
+            <li><strong>16/04/2020:</strong> Inclusão de item na aba "Outros": informação de salário mínimo nas competências sem remuneração.</li>
+            <li><strong>05/04/2020:</strong> Inclusão de opção para informar sobre a Qualidade de Segurado do Instituidor, mesmo nos casos de Indeferimento da Pensão por Morte.</li>
+            <li><strong>04/04/2020:</strong> Inclusão de opção para justificar dispensa de exigência para complementação de recolhimentos, quando não completa o tempo/carência, na aba "Contribuições".</li>
+            <li><strong>02/04/2020:</strong> Inclusão de item na aba "Outros": utilização de processo anterior.</li>
+            <li><strong>01/04/2020:</strong> Inclusão de motivo de Indeferimento da EC nº 103/2019 na espécie 41.</li>
+            <li><strong>31/03/2020:</strong> Inclusão de motivos de Indeferimento da LC nº 142: não cumprimento de requisitos mínimos (para as espécies 41 - Aposentadoria por Idade Urbana, e 42 - Aposentadoria por Tempo de Contribuição).</li>
+            <li><strong>31/03/2020:</strong> Inclusão de motivo de Análise: solicitação de cópia de processo anterior.</li>
+            <li><strong>31/03/2020:</strong> Correção de erro no item "Não autorizou a alteração da Espécie do Benefício", da aba "Outros".</li>
+            <li><strong>29/03/2020:</strong> Inclusão de suporte a Concessão/Indeferimento de 31 - Auxílio-Doença.</li>
+            <li><strong>29/03/2020:</strong> Alteração para exibir código da Espécie na caixa de seleção.</li>
+            <li><strong>29/03/2020:</strong> Alteração no texto do Indeferimento de Aposentadoria por Idade Rural por Perda da Qualidade de Segurado.</li>
+            <li><strong>22/03/2020:</strong> Inclusão de motivo para vínculo desconsiderado: documento inválido.</li>
+            <li><strong>14/03/2020:</strong> Inclusão de lembrete ao Imprimir para informar NB e/ou Interessado.</li>
+            <li><strong>13/03/2020:</strong> Correção de erro ao salvar dados do Usuário.</li>
+            <li><strong>11/03/2020:</strong> Inclusão de fundamentação para Atividade Especial importada e não enviada para SST.</li>
+            <li><strong>09/03/2020:</strong> Inclusão de motivos de Indeferimento da EC nº 103/2019 nas espécies 42, 46 e 57.</li>
+            <li><strong>07/03/2020:</strong> Aba "Visualização" agora exibe a data atual na prévia, e não uma data fictícia fixa.</li>
+            <li><strong>07/03/2020:</strong> Alteração visual na forma de marcar/desmarcar os itens do Despacho.</li>
+            <li><strong>06/03/2020:</strong> Correção na formatação para permitir copiar/colar o NB direto do Prisma/GET.</li>
+        </ul>
+    </div>
+</body>
+</html>
