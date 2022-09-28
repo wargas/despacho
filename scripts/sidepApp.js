@@ -3,7 +3,6 @@
 //Controller Principal
 app.controller('spCtrl', function ($scope, $filter, $cookies) {
 
-    
     //Seção do Usuário
     $scope.nomeUsuario = "Wargas Delmondes Teixeira";
     $scope.cargoUsuario = "";
@@ -36,7 +35,7 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
     ];
     $scope.tipoIdentificador = "Benefício";
     $scope.tamanhoIdentificador = 13;
-    $scope.especieSelecionada = $scope.especies[0];
+    $scope.especieSelecionada = $scope.especies[10];
     $scope.especieExibicao = "E/NB";
     $scope.numeroBeneficio = new URLSearchParams(location.search).get('nb');
     $scope.numeroBeneficioValido = false;
