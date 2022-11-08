@@ -3,6 +3,10 @@
 //Controller Principal
 app.controller('spCtrl', function ($scope, $filter, $cookies) {
 
+    console.log($scope)
+
+    const especie = new URLSearchParams(location.search).get('especie');
+
     //Seção do Usuário
     $scope.nomeUsuario = "Wargas Delmondes Teixeira";
     $scope.cargoUsuario = "";
@@ -35,7 +39,7 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
     ];
     $scope.tipoIdentificador = "Benefício";
     $scope.tamanhoIdentificador = 13;
-    $scope.especieSelecionada = $scope.especies[10];
+    $scope.especieSelecionada = especie === '80' ?  $scope.especies[15] : $scope.especies[10];
     $scope.especieExibicao = "E/NB";
     $scope.numeroBeneficio = new URLSearchParams(location.search).get('nb');
     $scope.numeroBeneficioValido = false;
@@ -216,7 +220,8 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
         chkRemuneradaTurismoEmpregados: false,
         chkNaoParticipaAtividade: false,
         chkOutorgaIrregular: false,
-        chkNaoIndenizado: false
+        chkNaoIndenizado: false,
+        chkNaoResidir: false
     };
     //Campos das Exigências
     $scope.itensExigencia = {
@@ -319,7 +324,7 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
         } else {
             $scope.tipoIdentificador = "do Benefício";
             $scope.tamanhoIdentificador = 13;
-            if ($scope.numeroBeneficio.length > 13) {
+            if ($scope.numeroBeneficio?.length > 13) {
                 $scope.numeroBeneficio = "";
             };
             $scope.especieExibicao = "E/NB";
@@ -994,6 +999,10 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
                 if ($scope.itensRural.chkOutorgaIrregular) {
                     listaMotivos.push("da descaracterização da condição de Segurado Especial, em função da outorga em parceria/meação/comodato de mais de 50% da propriedade e/ou não exercício de atividade rural por outorgante/outorgado, em desacordo com o disposto no inciso I, §8º, art. 11 da Lei nº 8.213/91");
                 };
+                if ($scope.itensRural.chkNaoResidir) {
+                    listaMotivos.push("da descaracterização da condição de Segurado Especial, em função de não residir em  em imóvel rural, ou em aglomerado urbano ou rural próximo, de acordo com o art. 110 da da Instrução Normativa nº 128/2022");
+                };
+
                 if ($scope.itensRural.chkNaoIndenizado) {
                     if ($scope.especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição') {
                         listaMotivos.push("da não indenização de período comprovado a partir de Novembro/1991, nos termos do §2º, art. 55 da Lei nº 8.213/91, e art. 189 da Instrução Normativa nº 77/2015");
@@ -1001,7 +1010,7 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
                         listaMotivos.push("da não indenização de período comprovado, nos termos do inciso IV, art. 96 da Lei nº 8.213/91, e dos incisos VI e VII, art. 445 da Instrução Normativa nº 77/2015");
                     };
                 };
-
+                
                 qtdMotivos = listaMotivos.length;
                 
                 for (i = 0; i < qtdMotivos; i++) {
@@ -1324,7 +1333,6 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
         
         $scope.itensDespacho.outros = conclusaoOutro;
     };
-
     //FUNÇÕES DE MONTAGEM: INDEFERIMENTO
     //Indeferimento > Pensão Urbana
     $scope.despachoPensUrbInd = function () {

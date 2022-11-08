@@ -2625,7 +2625,7 @@
                                         </label><br>
                                         <div class="container flex flex-col"
                                             ng-show="itensRural.txtRuralConsiderado==='Reconhecida Parcial'">
-                                            <label><b>Motivo(s) Não Reconhecimento:</b></label>
+                                            <label><b>Motivo(s) Não Reconhecimentos:</b></label>
                                             <div class="form-check">
                                                 <label><input type="checkbox" value="" class="form-check-input"
                                                         ng-model="itensRural.chkSemDocumentos"
@@ -2681,6 +2681,12 @@
                                                         ng-change="montarDespacho()">Não houve a indenização de período
                                                     reconhecido</label>
                                             </div>
+                                            <div class="form-check">
+                                            <label>
+                                                <input type="checkbox" value="" class="form-check-input"
+                                                    ng-model="itensRural.chkNaoResidir"
+                                                    ng-change="montarDespacho()">Não reside em imóvel rural ou em aglomerado urbano ou rural próximo</label>
+                                        </div>
                                         </div>
                                         <label><input type="radio" class="form-check-input"
                                                 ng-model="itensRural.txtRuralConsiderado" ng-change="montarDespacho()"
@@ -2739,12 +2745,19 @@
                                                         ng-change="montarDespacho()">Outorga em contrato de mais de 50%
                                                     do imóvel e/ou sem atividade rural pelos contratantes</label>
                                             </div>
+                                            <div class="form-check">
+                                                <label>
+                                                    <input type="checkbox" value="" class="form-check-input"
+                                                        ng-model="itensRural.chkNaoResidir"
+                                                        ng-change="montarDespacho()">Não reside em imóvel rural ou em aglomerado urbano ou rural próximo</label>
+                                            </div>
+                                           
                                             <div class="form-check"
                                                 ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição' || especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
                                                 <label><input type="checkbox" value="" class="form-check-input"
                                                         ng-model="itensRural.chkNaoIndenizado"
                                                         ng-change="montarDespacho()">Não houve a indenização de período
-                                                    reconhecido</label>
+                                                    reconhecidos</label>
                                             </div>
                                         </div>
                                     </div>
