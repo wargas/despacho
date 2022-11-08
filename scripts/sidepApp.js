@@ -967,6 +967,8 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
         let listaMotivos = [];
         let qtdMotivos = 0;
 
+        console.log('montando ural', $scope.itensRural.chkNaoResidir)
+
         switch ($scope.itensRural.txtRuralConsiderado) {
             case 'Não há':
                 conclusaoRural = "Não houve a apresentação de documentos para comprovação de Atividade Rural, nem quaisquer períodos reconhecidos de outra maneira.";
@@ -1055,6 +1057,11 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
                 if ($scope.itensRural.chkOutorgaIrregular) {
                     listaMotivos.push("da descaracterização da condição de Segurado Especial, em função da outorga em parceria/meação/comodato de mais de 50% da propriedade e/ou não exercício de atividade rural por outorgante/outorgado, em desacordo com o disposto no inciso I, §8º, art. 11 da Lei nº 8.213/91");
                 };
+                
+                if ($scope.itensRural.chkNaoResidir) {
+                    listaMotivos.push("da descaracterização da condição de Segurado Especial, em função de não residir em  em imóvel rural, ou em aglomerado urbano ou rural próximo, de acordo com o art. 110 da da Instrução Normativa nº 128/2022");
+                };
+
                 if ($scope.itensRural.chkNaoIndenizado) {
                     if ($scope.especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição') {
                         listaMotivos.push("da não indenização de período comprovado a partir de Novembro/1991, nos termos do §2º, art. 55 da Lei nº 8.213/91, e art. 189 da Instrução Normativa nº 77/2015");
