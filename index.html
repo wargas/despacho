@@ -177,8 +177,7 @@
                             <!-- BLOCO DE MOTIVOS DE INDEFERIMENTO -->
                             <div ng-show="tipoDespacho == 'Indeferimento'" id="motIndef">
                                 <!-- Motivos Indeferimento Pensão -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
+                                <div ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
                                     <div class="form-check">
                                         <label class="form-check-label">
                                             <strong>Perda da Qualidade de Segurado</strong>
@@ -230,8 +229,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-check" style="margin-left:20px"
-                                        ng-show="itensMotivoDespacho.chkComprDepend && itensMotivoDespacho.chkDependNaoComprConjuge">
+                                    <div class="form-check" style="margin-left:20px" ng-show="itensMotivoDespacho.chkComprDepend && itensMotivoDespacho.chkDependNaoComprConjuge">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkComprRestabUniao"
                                                 ng-change="montarDespacho()"><strong>Não comprovou restabelecimento da
@@ -239,8 +237,7 @@
                                         </label>
                                     </div>
                                     <p ng-show="itensMotivoDespacho.chkComprDepend" />
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Pensão por Morte Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Pensão por Morte Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkComprRural"
                                                 ng-change="montarDespacho()"><strong>Não ficar comprovado o exercício de
@@ -261,8 +258,7 @@
                                                 Benefício</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -300,16 +296,14 @@
                                                         ng-change="montarDespacho()" value="Desdobrado">Desdobrada
                                                 </label>
                                             </div>
-                                            <div class="input-group"
-                                                ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Em Benefício'">
+                                            <div class="input-group" ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Em Benefício'">
                                                 <span class="input-group-addon">E/NB</span>
                                                 <input type="text" id="nbanterior" class="form-control"
                                                     ng-model="itensMotivoDespacho.txtBenefInstituidor"
                                                     ng-blur="montarDespacho()" maxlength="20" style="width:170px"
                                                     placeholder="NB Anterior">
                                             </div>
-                                            <div class="input-group"
-                                                ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Desdobrado'">
+                                            <div class="input-group" ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Desdobrado'">
                                                 <span class="input-group-addon">E/NB</span>
                                                 <input type="text" id="nbanterior" class="form-control"
                                                     ng-model="itensMotivoDespacho.txtBenefInstituidor"
@@ -320,8 +314,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Indeferimento Auxílio-Reclusão -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Auxílio-Reclusão Urbano' || especieSelecionada.descricao == 'Auxílio-Reclusão Rural'">
+                                <div ng-show="especieSelecionada.descricao == 'Auxílio-Reclusão Urbano' || especieSelecionada.descricao == 'Auxílio-Reclusão Rural'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkFaltaCarencia"
@@ -366,8 +359,7 @@
                                                 Renda Média superior ao limite</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkRendaSuperior">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkRendaSuperior">
                                         <span class="input-group-addon">R$</span>
                                         <input type="text" id="renda" class="form-control"
                                             ng-model="itensMotivoDespacho.txtRenda" ng-blur="montarDespacho()"
@@ -448,8 +440,7 @@
                                                 Renovação de Declaração de Cárcere</label>
                                         </div>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Auxílio-Reclusão Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Auxílio-Reclusão Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkComprRural"
                                                 ng-change="montarDespacho()"><strong>Não ficar comprovado o exercício de
@@ -458,8 +449,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Indeferimento Auxílio-Doença -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Urbano' || especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
+                                <div ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Urbano' || especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkFaltaCarencia"
@@ -497,8 +487,7 @@
                                             ng-model="itensMotivoDespacho.txtDataQualSeg" ng-blur="montarDespacho()"
                                             maxlength="20" style="width:150px" placeholder="Perda em">
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkComprRural"
                                                 ng-change="montarDespacho()"><strong>Não ficar comprovado o exercício de
@@ -534,8 +523,7 @@
                                                 Benefício</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -543,8 +531,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Indeferimento Auxílio-Acidente -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Auxílio-Acidente Previdenciário' || especieSelecionada.descricao == 'Auxílio-Acidente por Acidente de Trabalho'">
+                                <div ng-show="especieSelecionada.descricao == 'Auxílio-Acidente Previdenciário' || especieSelecionada.descricao == 'Auxílio-Acidente por Acidente de Trabalho'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkPericiaContraria"
@@ -559,8 +546,7 @@
                                                 Aposentadoria</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -568,8 +554,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Indeferimento Aposentadoria por Idade -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana' || especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
+                                <div ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana' || especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
                                     <div ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
                                         <strong>Nova Previdência (EC nº 103/2019):</strong>
                                         <div class="form-check">
@@ -602,8 +587,7 @@
                                                 ng-change="montarDespacho()"><strong>Falta de Idade</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkNaoNovasRegrasEC103 || itensMotivoDespacho.chkNaoReqMinimosLC142"
                                                 ng-model="itensMotivoDespacho.chkNaoDeficienteLC142"
@@ -611,8 +595,7 @@
                                                 Deficiente (LC nº 142/13)</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkNaoNovasRegrasEC103 || itensMotivoDespacho.chkNaoDeficienteLC142"
                                                 ng-model="itensMotivoDespacho.chkNaoReqMinimosLC142"
@@ -620,16 +603,14 @@
                                                 (LC nº 142/13)</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkQualSeg"
                                                 ng-change="montarDespacho()"><strong>Perda da Qualidade de Trabalhador
                                                 Rural</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Rural' && itensMotivoDespacho.chkQualSeg">
+                                    <div style="margin-left:20px" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Rural' && itensMotivoDespacho.chkQualSeg">
                                         <input type="text" class="form-control" id="dataperda"
                                             ng-model="itensMotivoDespacho.txtDataQualSeg" ng-blur="montarDespacho()"
                                             maxlength="20" style="width:150px" placeholder="Perda em">
@@ -641,8 +622,7 @@
                                                 Benefício</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -650,8 +630,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Indeferimento Aposentadoria por Tempo de Contribuição -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
+                                <div ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
                                     <strong>Nova Previdência (EC nº 103/2019):</strong>
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
@@ -661,8 +640,7 @@
                                                 regras anteriores</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkNaoNovasRegrasEC103">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkNaoNovasRegrasEC103">
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                             maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -685,8 +663,7 @@
                                                 Contribuição</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkFaltaTempo">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkFaltaTempo">
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                             maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -736,8 +713,7 @@
                                                 Benefício</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -755,8 +731,7 @@
                                                 regras anteriores</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkNaoNovasRegrasEC103">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkNaoNovasRegrasEC103">
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                             maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -779,8 +754,7 @@
                                                 15/20/25 Anos</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkFaltaTempo">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkFaltaTempo">
                                         <input type="text" class="form-control" id="qtdanos"
                                             ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                             maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -814,8 +788,7 @@
                                                 Benefício</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -833,8 +806,7 @@
                                                 regras anteriores</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkNaoNovasRegrasEC103">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkNaoNovasRegrasEC103">
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                             maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -858,8 +830,7 @@
                                                 por 30/25 anos</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkFaltaTempo">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkFaltaTempo">
                                         <input type="text" class="form-control" id="qtdanos"
                                             ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                             maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -893,8 +864,7 @@
                                                 Benefício</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -902,10 +872,8 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Indeferimento Salário-Maternidade -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Salário-Maternidade Urbano' || especieSelecionada.descricao == 'Salário-Maternidade Rural'">
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Salário-Maternidade Rural'">
+                                <div ng-show="especieSelecionada.descricao == 'Salário-Maternidade Urbano' || especieSelecionada.descricao == 'Salário-Maternidade Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Salário-Maternidade Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkComprRural"
                                                 ng-change="montarDespacho()"><strong>Não ficar comprovado o exercício de
@@ -1014,8 +982,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Indeferimento Benefício Assistencial -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Idoso' || especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
+                                <div ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Idoso' || especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkObitoRequerente"
@@ -1031,16 +998,14 @@
                                                 1/4 do Salário Mínimo</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="form-check"
-                                        ng-show="itensMotivoDespacho.chkRendaSuperior && !itensMotivoDespacho.chkObitoRequerente">
+                                    <div style="margin-left:20px" class="form-check" ng-show="itensMotivoDespacho.chkRendaSuperior && !itensMotivoDespacho.chkObitoRequerente">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkACPRenda"
                                                 ng-change="montarDespacho()"><strong>Não comprovou Comprometimento de
                                                 Renda - ACP nº 5044874-22.2013.404.7100-RS (B87 / B88)</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkRendaSuperior && !itensMotivoDespacho.chkObitoRequerente">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkRendaSuperior && !itensMotivoDespacho.chkObitoRequerente">
                                         <span class="input-group-addon">R$</span>
                                         <input type="text" id="renda" class="form-control"
                                             ng-model="itensMotivoDespacho.txtRenda" ng-blur="montarDespacho()"
@@ -1054,8 +1019,7 @@
                                                 CadÚnico</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkObitoRequerente"
                                                 ng-model="itensMotivoDespacho.chkNaoDeficiente"
@@ -1063,8 +1027,7 @@
                                                 Deficiente após Avaliações </strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkObitoRequerente"
                                                 ng-model="itensMotivoDespacho.chkNaoCompareceuAvaliacao"
@@ -1079,8 +1042,7 @@
                                                 Benefício</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkOutroBeneficio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkOutroBeneficio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtOutroBeneficio" ng-blur="montarDespacho()"
@@ -1138,8 +1100,7 @@
                                                 Permanência</strong>
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px" class="input-group"
-                                        ng-show="itensMotivoDespacho.chkNaoCessacaoAuxilio">
+                                    <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.chkNaoCessacaoAuxilio">
                                         <span class="input-group-addon">E/NB</span>
                                         <input type="text" class="form-control"
                                             ng-model="itensMotivoDespacho.txtAuxilioEmManutencao"
@@ -1151,8 +1112,7 @@
                             <!-- BLOCO DE MOTIVOS DE CONCESSÃO-->
                             <div ng-show="tipoDespacho == 'Concessão'" id="motConc">
                                 <!-- Motivos Concessão Pensão -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
+                                <div ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
@@ -1179,16 +1139,14 @@
                                                     ng-change="montarDespacho()" value="Desdobrado">Desdobrada
                                             </label>
                                         </div>
-                                        <div class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Em Benefício'">
+                                        <div class="input-group" ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Em Benefício'">
                                             <span class="input-group-addon">E/NB</span>
                                             <input type="text" id="nbanterior" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtBenefInstituidor"
                                                 ng-blur="montarDespacho()" maxlength="20" style="width:170px"
                                                 placeholder="NB Anterior">
                                         </div>
-                                        <div class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Desdobrado'">
+                                        <div class="input-group" ng-show="itensMotivoDespacho.txtTipoInstituidor == 'Desdobrado'">
                                             <span class="input-group-addon">E/NB</span>
                                             <input type="text" id="nbanterior" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtBenefInstituidor"
@@ -1243,8 +1201,7 @@
                                                     Parcial</strong>
                                             </label>
                                         </div>
-                                        <div style="margin-left:20px"
-                                            ng-show="itensMotivoDespacho.chkDependNaoComprovado">
+                                        <div style="margin-left:20px" ng-show="itensMotivoDespacho.chkDependNaoComprovado">
                                             <div class="form-inline">
                                                 <div class="form-check">
                                                     <label style="padding-right:30px"><input type="checkbox" value=""
@@ -1277,8 +1234,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc3"
                                                 ng-change="montarDespacho()"><strong>Reconhecido nexo entre o Acidente e
@@ -1294,8 +1250,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Concessão Auxílio-Reclusão -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Auxílio-Reclusão Urbano' || especieSelecionada.descricao == 'Auxílio-Reclusão Rural'">
+                                <div ng-show="especieSelecionada.descricao == 'Auxílio-Reclusão Urbano' || especieSelecionada.descricao == 'Auxílio-Reclusão Rural'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
@@ -1351,8 +1306,7 @@
                                                     Parcial</strong>
                                             </label>
                                         </div>
-                                        <div style="margin-left:20px"
-                                            ng-show="itensMotivoDespacho.chkDependNaoComprovado">
+                                        <div style="margin-left:20px" ng-show="itensMotivoDespacho.chkDependNaoComprovado">
                                             <div class="form-inline">
                                                 <div class="form-check">
                                                     <label style="padding-right:30px"><input type="checkbox" value=""
@@ -1387,8 +1341,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Concessão Auxílio-Doença -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Urbano' || especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
+                                <div  ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Urbano' || especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
@@ -1396,16 +1349,14 @@
                                                 Segurado</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Urbano'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Urbano'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc2"
                                                 ng-change="montarDespacho()"><strong>Completou a Carência em
                                                 Contribuições</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Benefício por Incapacidade Temporária Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc2"
                                                 ng-change="montarDespacho()"><strong>Completou a Carência em meses de
@@ -1421,8 +1372,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Concessão Auxílio-Acidente -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Auxílio-Acidente Previdenciário' || especieSelecionada.descricao == 'Auxílio-Acidente por Acidente de Trabalho'">
+                                <div ng-show="especieSelecionada.descricao == 'Auxílio-Acidente Previdenciário' || especieSelecionada.descricao == 'Auxílio-Acidente por Acidente de Trabalho'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
@@ -1432,8 +1382,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Concessão Aposentadoria por Idade -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana' || especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
+                                <div ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana' || especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
                                     <div class="form-check">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkMotivoConc4"
@@ -1442,8 +1391,7 @@
                                                 mínima</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkMotivoConc4"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc2"
@@ -1451,8 +1399,7 @@
                                                 Contribuição</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkMotivoConc4"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc3"
@@ -1460,8 +1407,7 @@
                                                 Contribuições</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkMotivoConc4"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc3"
@@ -1469,8 +1415,7 @@
                                                 Atividade Rural</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Idade Urbana'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-disabled="itensMotivoDespacho.chkMotivoConc1 || itensMotivoDespacho.chkMotivoConc2 || itensMotivoDespacho.chkMotivoConc3"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc4"
@@ -1480,8 +1425,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Concessão Aposentadoria por Tempo de Contribuição -->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
+                                <div ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
                                     <div class="form-group">
                                         <label class="form-check-label">
                                             <input type="radio" class="form-check-input"
@@ -1490,8 +1434,7 @@
                                                 ("Aposentadoria Programada" - EC nº 103/2019):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Nova'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Nova'">
                                             <input type="text" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1513,8 +1456,7 @@
                                                 Transição ("Nova Previdência" - EC nº 103/2019):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="form-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
+                                        <div style="margin-left:20px" class="form-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
                                                     ng-model="itensMotivoDespacho.txtTipoRegraTransicao"
@@ -1536,8 +1478,7 @@
                                                     ng-change="montarDespacho()" value="Pedagio100">Pedágio 100%
                                             </label>
                                         </div>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
                                             <input type="text" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1560,8 +1501,7 @@
                                                 3.048/99):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="form-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
+                                        <div style="margin-left:20px" class="form-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
                                                     ng-model="itensMotivoDespacho.txtTipoAposAntiga"
@@ -1573,8 +1513,7 @@
                                                     ng-change="montarDespacho()" value="Proporcional">Proporcional
                                             </label>
                                         </div>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
                                             <input type="text" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1597,8 +1536,7 @@
                                                 Deficiência (Lei Complementar nº 142/2013):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'LC142'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'LC142'">
                                             <input type="text" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1626,8 +1564,7 @@
                                                 ("Aposentadoria Programada Especial" - EC nº 103/2019):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Nova'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Nova'">
                                             <input type="text" class="form-control" id="qtdanos"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1649,8 +1586,7 @@
                                                 Transição ("Nova Previdência" - EC nº 103/2019):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
                                             <input type="text" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1672,8 +1608,7 @@
                                                 ("Aposentadoria Especial" - Decreto nº 3.048/99):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
                                             <input type="text" class="form-control" id="qtdanos"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1699,8 +1634,7 @@
                                                 ("Aposentadoria Programada do Professor" - EC nº 103/2019):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Nova'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Nova'">
                                             <input type="text" class="form-control" id="qtdanos"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1722,8 +1656,7 @@
                                                 Transição ("Nova Previdência" - EC nº 103/2019):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="form-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
+                                        <div style="margin-left:20px" class="form-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
                                             <label class="form-check-label">
                                                 <input type="radio" class="form-check-input"
                                                     ng-model="itensMotivoDespacho.txtTipoRegraTransicao"
@@ -1740,8 +1673,7 @@
                                                     ng-change="montarDespacho()" value="Pedagio100">Pedágio 100%
                                             </label>
                                         </div>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Transição'">
                                             <input type="text" class="form-control"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1764,8 +1696,7 @@
                                                 3.048/99):</strong>
                                         </label>
                                         <p></p>
-                                        <div style="margin-left:20px" class="input-group"
-                                            ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
+                                        <div style="margin-left:20px" class="input-group" ng-show="itensMotivoDespacho.txtTipoAposTempo == 'Antiga'">
                                             <input type="text" class="form-control" id="qtdanos"
                                                 ng-model="itensMotivoDespacho.txtTempoAnos" ng-blur="montarDespacho()"
                                                 maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
@@ -1782,8 +1713,7 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Concessão Salário-Maternidade-->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Salário-Maternidade Urbano' || especieSelecionada.descricao == 'Salário-Maternidade Rural'">
+                                <div ng-show="especieSelecionada.descricao == 'Salário-Maternidade Urbano' || especieSelecionada.descricao == 'Salário-Maternidade Rural'">
                                     <div>
                                         <div class="form-group">
                                             <div><strong>Comprovou o Fato Gerador:</strong></div>
@@ -1819,16 +1749,14 @@
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Salário-Maternidade Urbano'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Salário-Maternidade Urbano'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
                                                 ng-change="montarDespacho()"><strong>Comprovada a Carência de 10
                                                 Contribuições</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Salário-Maternidade Rural'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Salário-Maternidade Rural'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
                                                 ng-change="montarDespacho()"><strong>Comprovada a Carência de 10 Meses
@@ -1837,10 +1765,8 @@
                                     </div>
                                 </div>
                                 <!-- Motivos Concessão Benefício Assistencial-->
-                                <div
-                                    ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Idoso' || especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Idoso'">
+                                <div ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Idoso' || especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Idoso'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
                                                 ng-change="montarDespacho()"><strong>Comprovou a inscrição no CadÚnico
@@ -1848,8 +1774,7 @@
                                                 Mínimo, e a Idade mínima de 65 Anos</strong>
                                         </label>
                                     </div>
-                                    <div class="form-check"
-                                        ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
+                                    <div class="form-check" ng-show="especieSelecionada.descricao == 'Benefício Assistencial ao Deficiente'">
                                         <label><input type="checkbox" value="" class="form-check-input"
                                                 ng-model="itensMotivoDespacho.chkMotivoConc1"
                                                 ng-change="montarDespacho()"><strong>Comprovou a inscrição no CadÚnico
@@ -2013,8 +1938,7 @@
                                                             ng-change="montarDespacho()">CTC - Certidão de Tempo de
                                                         Contribuição</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensVinculo.chkDocCTC">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensVinculo.chkDocCTC">
                                                     <span class="input-group-addon">Órgão</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensVinculo.txtDocCTC" ng-blur="montarDespacho()"
@@ -2026,8 +1950,7 @@
                                                             ng-change="montarDespacho()">ATC - Averbação de Tempo de
                                                         Contribuição</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensVinculo.chkDocATC">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensVinculo.chkDocATC">
                                                     <span class="input-group-addon">Nº ATC</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensVinculo.txtDocATC" ng-blur="montarDespacho()"
@@ -2038,8 +1961,7 @@
                                                             ng-model="itensVinculo.chkDocOutro"
                                                             ng-change="montarDespacho()">Outro(s) Documento(s)</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensVinculo.chkDocOutro">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensVinculo.chkDocOutro">
                                                     <span class="input-group-addon">Documento(s)</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensVinculo.txtOutroDocumento"
@@ -2067,8 +1989,7 @@
                                                     value="Documento Parcial e CNIS">Apresentou CTPS / Outros
                                                 documentos, mas houve vínculo(s) não considerado(s)</strong>
                                         </label>
-                                        <div
-                                            ng-show="itensVinculo.txtVinculoConsiderado === 'Documento Parcial e CNIS'">
+                                        <div ng-show="itensVinculo.txtVinculoConsiderado === 'Documento Parcial e CNIS'">
                                             <label><b>Motivo(s):</b></label>
                                             <div class="container">
                                                 <div class="form-check">
@@ -2095,8 +2016,7 @@
                                                             ng-change="montarDespacho()">Remuneração inferior ao
                                                         mínimo</label>
                                                 </div>
-                                                <div class="form-check"
-                                                    ng-show="especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
+                                                <div class="form-check" ng-show="especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
                                                     <label><input type="checkbox" value="" class="form-check-input"
                                                             ng-model="itensVinculo.chkConcomitanciaDebito"
                                                             ng-change="montarDespacho()">Há vínculo concomitante com
@@ -2190,8 +2110,7 @@
                                                             ng-change="montarDespacho()">Contribuições em atraso sem
                                                         comprovar atividade</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkCIAtraso">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkCIAtraso">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtCIAtraso"
@@ -2203,8 +2122,7 @@
                                                             ng-change="montarDespacho()">Contribuições em atraso após a
                                                         Data de Entrada do Requerimento - DER</label>
                                                 </div>
-                                                <div style="margin-left:20px"
-                                                    ng-show="itensContribuicao.chkCIAposDER && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
+                                                <div style="margin-left:20px" ng-show="itensContribuicao.chkCIAposDER && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
                                                     <div class="form-check">
                                                         <label><input type="checkbox" value="" class="form-check-input"
                                                                 ng-model="itensContribuicao.chkCIFacDispensaAlteracaoDER"
@@ -2212,8 +2130,7 @@
                                                             dispensada</label>
                                                     </div>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkCIAposDER">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkCIAposDER">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtCIAposDER"
@@ -2225,8 +2142,7 @@
                                                             ng-change="montarDespacho()">Contribuições em atraso não
                                                         computadas para fins de carência</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkCIAtrasoNaoCarencia">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkCIAtrasoNaoCarencia">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtCIAtrasoNaoCarencia"
@@ -2238,8 +2154,7 @@
                                                             ng-change="montarDespacho()">Contribuições abaixo do mínimo
                                                         sem complementação</label>
                                                 </div>
-                                                <div style="margin-left:20px"
-                                                    ng-show="itensContribuicao.chkCIAbaixoMinimo && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
+                                                <div style="margin-left:20px" ng-show="itensContribuicao.chkCIAbaixoMinimo && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
                                                     <div class="form-check">
                                                         <label><input type="checkbox" value="" class="form-check-input"
                                                                 ng-model="itensContribuicao.chkCIFacDispensaComplementacao"
@@ -2247,8 +2162,7 @@
                                                             contribuições dispensada</label>
                                                     </div>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkCIAbaixoMinimo">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkCIAbaixoMinimo">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtCIAbaixoMinimo"
@@ -2259,8 +2173,7 @@
                                                             ng-model="itensContribuicao.chkCIGFIPExtemporanea"
                                                             ng-change="montarDespacho()">GFIPs extemporâneas</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkCIGFIPExtemporanea">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkCIGFIPExtemporanea">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtCIGFIPExtemporanea"
@@ -2272,8 +2185,7 @@
                                                             ng-change="montarDespacho()">Contribuições de 5% ou 11%, não
                                                         considerados no B42/CTC</label>
                                                 </div>
-                                                <div style="margin-left:20px"
-                                                    ng-show="itensContribuicao.chkCIPlanoSimplificado && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
+                                                <div style="margin-left:20px" ng-show="itensContribuicao.chkCIPlanoSimplificado && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
                                                     <div class="form-check">
                                                         <label><input type="checkbox" value="" class="form-check-input"
                                                                 ng-model="itensContribuicao.chkCIFacDispensaComplementacao"
@@ -2281,8 +2193,7 @@
                                                             contribuições dispensada</label>
                                                     </div>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkCIPlanoSimplificado">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkCIPlanoSimplificado">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtCIPlanoSimplificado"
@@ -2320,8 +2231,7 @@
                                                             ng-change="montarDespacho()">Iniciou contribuições em
                                                         atraso</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacAtraso">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacAtraso">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacAtraso"
@@ -2333,8 +2243,7 @@
                                                             ng-change="montarDespacho()">Contribuições em atraso após a
                                                         Data de Entrada do Requerimento - DER</label>
                                                 </div>
-                                                <div style="margin-left:20px"
-                                                    ng-show="itensContribuicao.chkFacAposDER && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
+                                                <div style="margin-left:20px" ng-show="itensContribuicao.chkFacAposDER && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
                                                     <div class="form-check">
                                                         <label><input type="checkbox" value="" class="form-check-input"
                                                                 ng-model="itensContribuicao.chkCIFacDispensaAlteracaoDER"
@@ -2342,8 +2251,7 @@
                                                             dispensada</label>
                                                     </div>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacAposDER">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacAposDER">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacAposDER"
@@ -2355,8 +2263,7 @@
                                                             ng-change="montarDespacho()">Contribuições em atraso não
                                                         computadas para fins de carência</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacAtrasoNaoCarencia">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacAtrasoNaoCarencia">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacAtrasoNaoCarencia"
@@ -2368,8 +2275,7 @@
                                                             ng-change="montarDespacho()">Facultativo de Baixa Renda -
                                                         FBR não validado</label>
                                                 </div>
-                                                <div style="margin-left:20px"
-                                                    ng-show="itensContribuicao.chkFacFBRNaoValidado && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
+                                                <div style="margin-left:20px" ng-show="itensContribuicao.chkFacFBRNaoValidado && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
                                                     <div class="form-check">
                                                         <label><input type="checkbox" value="" class="form-check-input"
                                                                 ng-model="itensContribuicao.chkCIFacDispensaComplementacao"
@@ -2377,8 +2283,7 @@
                                                             contribuições dispensada</label>
                                                     </div>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacFBRNaoValidado">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacFBRNaoValidado">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacFBRNaoValidado"
@@ -2390,8 +2295,7 @@
                                                             ng-change="montarDespacho()">Contribuições abaixo do mínimo
                                                         sem complementação</label>
                                                 </div>
-                                                <div style="margin-left:20px"
-                                                    ng-show="itensContribuicao.chkFacAbaixoMinimo && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
+                                                <div style="margin-left:20px" ng-show="itensContribuicao.chkFacAbaixoMinimo && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
                                                     <div class="form-check">
                                                         <label><input type="checkbox" value="" class="form-check-input"
                                                                 ng-model="itensContribuicao.chkCIFacDispensaComplementacao"
@@ -2399,8 +2303,7 @@
                                                             contribuições dispensada</label>
                                                     </div>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacAbaixoMinimo">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacAbaixoMinimo">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacAbaixoMinimo"
@@ -2412,8 +2315,7 @@
                                                             ng-change="montarDespacho()">Reiniciou contribuições em
                                                         atraso, após Perda da Qualidade de Segurado</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacAtrasoAposPQS">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacAtrasoAposPQS">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacAtrasoAposPQS"
@@ -2425,8 +2327,7 @@
                                                             ng-change="montarDespacho()">Contribuições de 11% não
                                                         consideradas no B42/CTC</label>
                                                 </div>
-                                                <div style="margin-left:20px"
-                                                    ng-show="itensContribuicao.chkFacPlanoSimplificado && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
+                                                <div style="margin-left:20px" ng-show="itensContribuicao.chkFacPlanoSimplificado && especieSelecionada.descricao != 'Certidão de Tempo de Contribuição'">
                                                     <div class="form-check">
                                                         <label><input type="checkbox" value="" class="form-check-input"
                                                                 ng-model="itensContribuicao.chkCIFacDispensaComplementacao"
@@ -2434,8 +2335,7 @@
                                                             contribuições dispensada</label>
                                                     </div>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacPlanoSimplificado">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacPlanoSimplificado">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacPlanoSimplificado"
@@ -2447,8 +2347,7 @@
                                                             ng-change="montarDespacho()">Contribuições concomitantes com
                                                         atividade de filiação obrigatória</label>
                                                 </div>
-                                                <div style="margin-left:20px" class="input-group"
-                                                    ng-show="itensContribuicao.chkFacConcomitante">
+                                                <div style="margin-left:20px" class="input-group" ng-show="itensContribuicao.chkFacConcomitante">
                                                     <span class="input-group-addon">Competências</span>
                                                     <input type="text" class="form-control"
                                                         ng-model="itensContribuicao.txtFacConcomitante"
@@ -2623,8 +2522,7 @@
                                                 reconhecimento parcial dos períodos de Atividade Rural
                                                 requeridos</strong>
                                         </label><br>
-                                        <div class="container flex flex-col"
-                                            ng-show="itensRural.txtRuralConsiderado==='Reconhecida Parcial'">
+                                        <div class="container flex flex-col" ng-show="itensRural.txtRuralConsiderado==='Reconhecida Parcial'">
                                             <label><b>Motivo(s) Não Reconhecimentos:</b></label>
                                             <div class="form-check">
                                                 <label><input type="checkbox" value="" class="form-check-input"
@@ -2673,8 +2571,7 @@
                                                         ng-model="itensRural.chkBeneficioIrregular"
                                                         ng-change="montarDespacho()">Gozo de benefício com valor superior ao mínimo</label>
                                             </div>
-                                            <div class="form-check"
-                                                ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição' || especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
+                                            <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição' || especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
                                                 <label>
                                                     <input type="checkbox" value="" class="form-check-input"
                                                         ng-model="itensRural.chkNaoIndenizado"
@@ -2694,8 +2591,7 @@
                                                 reconhecimento de nenhum período de Atividade Rural
                                                 requerido</strong>
                                         </label>
-                                        <div class="container"
-                                            ng-show="itensRural.txtRuralConsiderado==='Não reconhecida'">
+                                        <div class="container" ng-show="itensRural.txtRuralConsiderado==='Não reconhecida'">
                                             <label><b>Motivo(s) Não Reconhecimento:</b></label>
                                             <div class="form-check">
                                                 <label><input type="checkbox" value="" class="form-check-input"
@@ -2754,8 +2650,7 @@
                                                     </label>
                                             </div>
                                            
-                                            <div class="form-check"
-                                                ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição' || especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
+                                            <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição' || especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
                                                 <label><input type="checkbox" value="" class="form-check-input"
                                                         ng-model="itensRural.chkNaoIndenizado"
                                                         ng-change="montarDespacho()">Não houve a indenização de período
@@ -2802,8 +2697,7 @@
                                                 formulação de Exigências, porém foram cumpridas
                                                 parcialmente</strong>
                                         </label>
-                                        <div style="margin-left:20px"
-                                            ng-show="itensExigencia.txtExigenciaConsiderado === 'Cumprida Parcial'">
+                                        <div style="margin-left:20px" ng-show="itensExigencia.txtExigenciaConsiderado === 'Cumprida Parcial'">
                                             <input type="text" class="form-control"
                                                 ng-model="itensExigencia.txtExigenciaParcialNaoCumprida"
                                                 ng-blur="montarDespacho()" placeholder="Itens não cumpridos"
@@ -2897,8 +2791,7 @@
                                             parecer positivo
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px"
-                                        ng-show="itensProcedimento.txtAvaliacaoSocial == 'Não Agendada'">
+                                    <div style="margin-left:20px" ng-show="itensProcedimento.txtAvaliacaoSocial == 'Não Agendada'">
                                         <div class="form-check">
                                             <label><input type="checkbox" value="" class="form-check-input"
                                                     ng-model="itensProcedimento.chkAusenciaVagasAgendamento"
@@ -2939,8 +2832,7 @@
                                             parecer positivo
                                         </label>
                                     </div>
-                                    <div style="margin-left:20px"
-                                        ng-show="itensProcedimento.txtAvaliacaoPericia == 'Não Agendada'">
+                                    <div style="margin-left:20px" ng-show="itensProcedimento.txtAvaliacaoPericia == 'Não Agendada'">
                                         <div class="form-check">
                                             <label><input type="checkbox" value="" class="form-check-input"
                                                     ng-model="itensProcedimento.chkAusenciaVagasAgendamento"
@@ -3058,16 +2950,14 @@
                         </div>
                         <div class="card-body">
                             <div ng-show="itensOutro.chkOutro">
-                                <div class="form-check"
-                                    ng-show="especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
+                                <div class="form-check" ng-show="especieSelecionada.descricao == 'Certidão de Tempo de Contribuição'">
                                     <label><input type="checkbox" value="" class="form-check-input"
                                             ng-model="itensOutro.chkAproveitamentoParcial"
                                             ng-change="montarDespacho()"><strong>Houve o aproveitamento parcial dos
                                             períodos na CTC</strong>
                                     </label>
                                 </div>
-                                <div class="input-group"
-                                    ng-show="especieSelecionada.descricao == 'Certidão de Tempo de Contribuição' && itensOutro.chkAproveitamentoParcial">
+                                <div class="input-group" ng-show="especieSelecionada.descricao == 'Certidão de Tempo de Contribuição' && itensOutro.chkAproveitamentoParcial">
                                     <span class="input-group-addon">Períodos Aproveitados</span>
                                     <input type="text" class="form-control"
                                         ng-model="itensOutro.txtPeriodosAproveitados" ng-blur="montarDespacho()"
@@ -3195,16 +3085,14 @@
                                             completaria direito ao benefício</strong>
                                     </label>
                                 </div>
-                                <div class="form-check"
-                                    ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
+                                <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
                                     <label><input type="checkbox" value="" class="form-check-input"
                                             ng-model="itensOutro.chkProporcional"
                                             ng-change="montarDespacho()"><strong>Requerente concordou com a concessão da
                                             Aposentadoria na sua forma Proporcional</strong>
                                     </label>
                                 </div>
-                                <div class="form-check"
-                                    ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
+                                <div class="form-check" ng-show="especieSelecionada.descricao == 'Aposentadoria por Tempo de Contribuição'">
                                     <label><input type="checkbox" value="" class="form-check-input"
                                             ng-model="itensOutro.chkNaoProporcional"
                                             ng-change="montarDespacho()"><strong>Requerente NÃO concordou com a
@@ -3225,8 +3113,7 @@
                                             incompatível/com acumulação vedada</strong>
                                     </label>
                                 </div>
-                                <div style="margin-left:20px" class="input-group"
-                                    ng-show="itensOutro.chkCessacaoBeneficio">
+                                <div style="margin-left:20px" class="input-group" ng-show="itensOutro.chkCessacaoBeneficio">
                                     <span class="input-group-addon">E/NB</span>
                                     <input type="text" class="form-control" ng-model="itensOutro.txtBeneficioCessado"
                                         ng-blur="montarDespacho()" maxlength="20" style="width:150px"
@@ -3239,24 +3126,21 @@
                                             competências sem remuneração no CNIS</strong>
                                     </label>
                                 </div>
-                                <div class="form-check"
-                                    ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
+                                <div class="form-check" ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
                                     <label><input type="checkbox" value="" class="form-check-input"
                                             ng-model="itensOutro.chkInstituidorBPC"
                                             ng-change="montarDespacho()"><strong>Instituidor titular de BPC, que não
                                             garante Pensão</strong>
                                     </label>
                                 </div>
-                                <div class="form-check"
-                                    ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
+                                <div class="form-check" ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
                                     <label><input type="checkbox" value="" class="form-check-input"
                                             ng-model="itensOutro.chkSolicitarResiduo"
                                             ng-change="montarDespacho()"><strong>Requerente deve solicitar resíduo de
                                             benefício(s)</strong>
                                     </label>
                                 </div>
-                                <div class="form-check"
-                                    ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
+                                <div class="form-check" ng-show="especieSelecionada.descricao == 'Pensão por Morte Urbana' || especieSelecionada.descricao == 'Pensão por Morte Rural' || especieSelecionada.descricao == 'Pensão por Morte por Acidente de Trabalho'">
                                     <label><input type="checkbox" value="" class="form-check-input"
                                             ng-model="itensOutro.chkPagtoPosObito"
                                             ng-change="montarDespacho()"><strong>Consignados valores recebidos pós

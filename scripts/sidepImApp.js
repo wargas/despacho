@@ -11,7 +11,7 @@ app.controller('siCtrl', function ($scope, $filter, $window) {
     $scope.interessadoDespacho = localStorage.getItem("interessadoDespacho");
     $scope.tipoDespacho = localStorage.getItem("tipoDespacho");
 
-    document.getElementById("conteudo").innerHTML = $scope.conteudoDespacho;
+    document.getElementById("conteudo").innerHTML = $scope.conteudoDespacho.replace(/(<\/?)div>/g, '$1p>');
 
     $window.document.title = $scope.tipoDespacho + " - " + $scope.nbDespacho;
     

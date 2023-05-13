@@ -3,9 +3,7 @@
 //Controller Principal
 app.controller('spCtrl', function ($scope, $filter, $cookies) {
 
-    console.log($scope)
-
-    const especie = new URLSearchParams(location.search).get('especie');
+     const especie = new URLSearchParams(location.search).get('especie');
 
     //Seção do Usuário
     $scope.nomeUsuario = "Wargas Delmondes Teixeira";
@@ -967,7 +965,7 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
         let listaMotivos = [];
         let qtdMotivos = 0;
 
-        console.log('montando ural', $scope.itensRural.chkNaoResidir)
+        console.log('montando Rural', $scope.itensRural.chkNaoResidir)
 
         switch ($scope.itensRural.txtRuralConsiderado) {
             case 'Não há':
