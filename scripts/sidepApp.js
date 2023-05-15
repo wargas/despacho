@@ -15,29 +15,29 @@ app.controller('spCtrl', function ($scope, $filter, $cookies) {
 
     //Seção do Benefício
     $scope.especies = [
-        { codigo: '21u', descricao: 'Pensão por Morte Urbana' },
-        { codigo: '21r', descricao: 'Pensão por Morte Rural' },
-        { codigo: '93', descricao: 'Pensão por Morte por Acidente de Trabalho' },
-        { codigo: '25', descricao: 'Auxílio-Reclusão Urbano' },
-        { codigo: '25', descricao: 'Auxílio-Reclusão Rural' },
-        { codigo: '31u', descricao: 'Benefício por Incapacidade Temporária Urbano' },
-        { codigo: '31r', descricao: 'Benefício por Incapacidade Temporária Rural' },
-        { codigo: '36', descricao: 'Auxílio-Acidente Previdenciário' },
-        { codigo: '94', descricao: 'Auxílio-Acidente por Acidente de Trabalho' },
-        { codigo: '41u', descricao: 'Aposentadoria por Idade Urbana' },
-        { codigo: '41r', descricao: 'Aposentadoria por Idade Rural' },
-        { codigo: '42', descricao: 'Aposentadoria por Tempo de Contribuição' },
-        { codigo: '46', descricao: 'Aposentadoria Especial' },
-        { codigo: '57', descricao: 'Aposentadoria Especial do Professor' },
-        { codigo: '80u', descricao: 'Salário-Maternidade Urbano' },
-        { codigo: '80r', descricao: 'Salário-Maternidade Rural' },
-        { codigo: '87', descricao: 'Benefício Assistencial ao Deficiente' },
-        { codigo: '88', descricao: 'Benefício Assistencial ao Idoso' },
-        { codigo: 'CTC', descricao: 'Certidão de Tempo de Contribuição' }
+        { codigo: '21', id: '21u', descricao: 'Pensão por Morte Urbana' },
+        { codigo: '21', id: '21r', descricao: 'Pensão por Morte Rural' },
+        { codigo: '93', id: '93', descricao: 'Pensão por Morte por Acidente de Trabalho' },
+        { codigo: '25', id: '25u', descricao: 'Auxílio-Reclusão Urbano' },
+        { codigo: '25', id: '25r', descricao: 'Auxílio-Reclusão Rural' },
+        { codigo: '31', id: '31u', descricao: 'Benefício por Incapacidade Temporária Urbano' },
+        { codigo: '31', id: '31r', descricao: 'Benefício por Incapacidade Temporária Rural' },
+        { codigo: '36', id: '36', descricao: 'Auxílio-Acidente Previdenciário' },
+        { codigo: '94', id: '94', descricao: 'Auxílio-Acidente por Acidente de Trabalho' },
+        { codigo: '41', id: '41u', descricao: 'Aposentadoria por Idade Urbana' },
+        { codigo: '41', id: '41r', descricao: 'Aposentadoria por Idade Rural' },
+        { codigo: '42', id: '42', descricao: 'Aposentadoria por Tempo de Contribuição' },
+        { codigo: '46', id: '46', descricao: 'Aposentadoria Especial' },
+        { codigo: '57', id: '57', descricao: 'Aposentadoria Especial do Professor' },
+        { codigo: '80', id: '80u', descricao: 'Salário-Maternidade Urbano' },
+        { codigo: '80', id: '80r', descricao: 'Salário-Maternidade Rural' },
+        { codigo: '87', id: '87', descricao: 'Benefício Assistencial ao Deficiente' },
+        { codigo: '88', id: '88', descricao: 'Benefício Assistencial ao Idoso' },
+        { codigo: 'CTC', id: 'CTC', descricao: 'Certidão de Tempo de Contribuição' }
     ];
     $scope.tipoIdentificador = "Benefício";
     $scope.tamanhoIdentificador = 13;
-    $scope.especieSelecionada = $scope.especies.find(e => e.codigo == especie) || especie[15]
+    $scope.especieSelecionada = $scope.especies.find(e => e.id == especie) || especie[15]
     $scope.especieExibicao = "E/NB";
     $scope.numeroBeneficio = new URLSearchParams(location.search).get('nb');
     $scope.numeroBeneficioValido = false;
