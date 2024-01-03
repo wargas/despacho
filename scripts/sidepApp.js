@@ -3,7 +3,9 @@
 //Controller Principal
 app.controller('spCtrl', function ($scope, $filter, $cookies) {
 
-     const especie = new URLSearchParams(location.search).get('especie');
+     const especie = new URLSearchParams(location.search).get('especie') ?? '41r';
+
+     
 
     //Seção do Usuário
     $scope.nomeUsuario = "Wargas Delmondes Teixeira";

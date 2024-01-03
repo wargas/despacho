@@ -10,6 +10,7 @@ app.controller('siCtrl', function ($scope, $filter, $window) {
     $scope.nbDespacho = localStorage.getItem("nbDespacho");
     $scope.interessadoDespacho = localStorage.getItem("interessadoDespacho");
     $scope.tipoDespacho = localStorage.getItem("tipoDespacho");
+    $scope.resultado = $scope.tipoDespacho.startsWith('Ind') ? 'INDEFERIDO' : 'CONCEDIDO'
 
     document.getElementById("conteudo").innerHTML = $scope.conteudoDespacho.replace(/(<\/?)div>/g, '$1p>');
 
